@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <title>Image Gallery</title>
+
+    <head>
+            <meta name="viewport" content="width=device-width" />
+        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Raleway" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <header id="showcase">
+            <div class="showcase-content">
+                <h1>Image Gallery </h1>
+                <p>Just a Simple Image Gallery</p>
+            </div>
+        </header>
+
+
+        <!-- Container for the enlarged img -->
+        <h3 class="primary-text">Image Section 1</h3>
+        <div class="image_cont_1">
+            <img src="images/image1.jpeg" class="photo_img" />
+            <img src="images/image2.jpeg" class="photo_img" />
+            <img src="images/image3.jpeg" class="photo_img" />
+            <img src="images/image4.jpeg" class="photo_img" />
+        </div>
+
+        <h3 class="primary-text">Image Section 2</h3>
+        <div class="image_cont_2">
+            <img src="images/image5.jpeg" class="photo_img" />
+            <img src="images/image6.jpeg" class="photo_img" />
+            <img src="images/image7.jpeg" class="photo_img" />
+            <img src="images/image8.jpeg" class="photo_img" />
+        </div>
+
+        <div id="photo_cont">
+            <div class="photo_modal_content">
+                <div class="modal-header">
+                    <a id="close" class="closeBtn" title="Close">&times;</a>
+                </div>
+                <div class="modal-body">
+                    <img id="enlarged_image_display" />
+                </div>
+                <div class="modal-footer">
+                    <a id="left" class="btn glyphicon glyphicon-chevron-left" title="Previous Image">
+                    </a>
+                    <div id="photo_counter">
+                        Photo:
+                        <span id="current_photo_number"></span> /
+                        <span id="total_photo_number"></span>
+                    </div>
+                    <a id="right" class="btn glyphicon glyphicon-chevron-right" title="Next Image"></a>
+                </div>
+            </div>
+        </div>
+
+    </body>
+    <script src="imageViewer.js"></script>
+</html>
